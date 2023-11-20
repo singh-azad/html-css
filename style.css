@@ -409,6 +409,9 @@ nav {
   .nav-item-link {
     padding: 0 1rem;
   }
+  .upper__footer{
+    gap: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -500,28 +503,6 @@ nav {
     padding-right: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 li {
   list-style: none;
 }
@@ -563,6 +544,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .upper__footer h5 {
