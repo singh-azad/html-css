@@ -1,12 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
+
 <body>
-  
+
+  <header>
+    <div class="header-top-wrapper">
+      <div class="header-top">
+        <address>
+          <a href="mailto:info@example.com"><i class="fa-solid fa-envelope"></i>info@example.com</a>
+          <a href="tell:+1(817)9013377"><i class="fa-solid fa-phone"></i>+1(817)901 3377</a>
+        </address>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+    <div class="header-main-wrapper">
+      <div class="main-header">
+        <a href="#" id="logo"><img src="assets/logo.png" alt="logo" /></a>
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="dropdown-toggle nav-item-link" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Home
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Home</a>
+                  <a class="dropdown-item" href="#">Main</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-item-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">Training</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#">Blog</a></li>
+          </ul>
+          <a id="get-in-touch-link" href="#">Get in touch</a>
+        </nav>
+        <div class="hamburger">
+          <span><i id="ham-icon" class="fa fa-bars"></i></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="hero-section">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="banner-text">
+              <h2><strong>Welcome to </strong>DogMilo <strong>Pets</strong></h2>
+              <p>Lorem Ipsum is simply dummy text of printing and typesetting industry</p>
+              <div class="banner-links">
+                <a class="get-started-link" href="#">Get Started</a>
+                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+              </div>
+            </div>
+            <img src="assets/banner.png" class="d-block w-100" alt="hero-image">
+          </div>
+          <div class="carousel-item">
+            <div class="banner-text">
+              <h2><strong>Welcome to </strong>DogMilo <strong>Pets</strong></h2>
+              <p>Lorem Ipsum is simply dummy text of printing and typesetting industry</p>
+              <div class="banner-links">
+                <a class="get-started-link" href="#">Get Started</a>
+                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+              </div>
+            </div>
+            <img src="assets/banner.png" class="d-block w-100" alt="hero-image">
+          </div>
+          <div class="carousel-item">
+            <div class="banner-text">
+              <h2><strong>Welcome to </strong>DogMilo <strong>Pets</strong></h2>
+              <p>Lorem Ipsum is simply dummy text of printing and typesetting industry</p>
+              <div class="banner-links">
+                <a class="get-started-link" href="#">Get Started</a>
+                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+              </div>
+            </div>
+            <img src="assets/banner.png" class="d-block w-100" alt="hero-image">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <section class="about-us-section max-container">
+        <img src="assets/pet.jpg" alt="pet" class="pet-img">
+        <div class="about">
+          <div class="about-us-heading">
+            <img src="assets/claw.jpg" alt="claw" class="claw">
+            <h5>About Us</h5>
+          </div>
+          <h3>Welcome DogMilo Pets</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+          </p>
+        </div>
+      </section>
+      <img src="assets/dog-logo-rt.png" alt="dog" class="dog-right">
+    </section>
+
+    <section class="service">
+      <img src="assets/dog-left.png" alt="left-dog" class="dog-left dog">
+      <section class="service-section max-container">
+        <h5>Service</h5>
+        <h3>DogMilo Pet Care Services For Your Best Friends.</h3>
+        <section class="service-card-section">
+          <div class="service-card">
+            <img src="assets/puppy.jpg" alt="puppy">
+            <h6>Pet Sitting</h6>
+            <p>The readable content of a page when looking at its layout</p>
+            <a href="#"><i class="fa-solid fa-greater-than" style="color: #000000;"></i></a>
+          </div>
+          <div class="service-card">
+            <img src="assets/puppy.jpg" alt="puppy">
+            <h6>Puppy Sitting</h6>
+            <p>The readable content of a page when looking at its layout</p>
+            <a href="#"><i class="fa-solid fa-greater-than" style="color: #000000;"></i></a>
+
+          </div>
+          <div class="service-card">
+            <img src="assets/puppy.jpg" alt="puppy">
+
+            <h6>Dog Walking</h6>
+            <p>The readable content of a page when looking at its layout</p>
+            <a href="#"><i class="fa-solid fa-greater-than" style="color: #000000;"></i></a>
+
+          </div>
+          <div class="service-card">
+            <img src="assets/puppy.jpg" alt="puppy">
+
+            <h6>Night Care</h6>
+            <p>The readable content of a page when looking at its layout</p>
+            <a href="#"><i class="fa-solid fa-greater-than" style="color: #000000;"></i></a>
+
+          </div>
+          <div class="service-card">
+            <img src="assets/puppy.jpg" alt="puppy">
+
+            <h6>Pet Sitting</h6>
+            <p>The readable content of a page when looking at its layout</p>
+            <a href="#"><i class="fa-solid fa-greater-than" style="color: #000000;"></i></a>
+
+          </div>
+        </section>
+      </section>
+      <img src="assets/dog-logo-rt.png" alt="right-dog" class="dog-right dog">
+    </section>
+
+    <section class="choose-us">
+      <img src="assets/forest.jpg" alt="dog-forest" class="forest-dog">
+      <section class="why-choose-us">
+        <div class="choose-us-heading">
+          <img src="assets/claw.jpg" alt="claw" class="claw">
+          <h5>Choose Us</h5>
+        </div>
+        <div>
+          <h3>Why Choose US?</h3>
+          <div class="our-feature">
+            <img src="assets/safety.jpg" alt="safety">
+            <div class="our-feature-text">
+              <h5>Safety First</h5>
+              <p>It is a long established fact that a reader will be distructed by the
+                readable content of a page when looking at its layout.</p>
+            </div>
+          </div>
+          <div class="our-feature play-yards">
+            <img src="assets/yard.jpg" alt="play yard">
+            <div class="our-feature-text">
+              <h5>Play Yards</h5>
+              <p>It is a long established fact that a reader will
+                be distructed by the readable content of a
+                page when looking at its layout.</p>
+            </div>
+          </div>
+          <div class="our-feature">
+            <img src="assets/monitor_pet.jpg" alt="monitor_pet">
+            <div class="our-feature-text">
+              <h5>Monitor Your Pets</h5>
+              <p>It is a long established fact that a reader will be distructed by the
+                readable content of a page when looking at its layout.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="upper__footer container d-flex flex-wrap">
+        <div class="footer__item">
+          <h5>Get in touch</h5>
+          <p>Have a question for us?</p>
+          <p>we will answer your problem here</p>
+          <div class="links link-color">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.pinterset.com/"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <h5>Support</h5>
+          <ul class="link-color">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Online chat</a></li>
+            <li><a href="#">Whatsapp</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Snapchat</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h5>About</h5>
+          <ul class="link-color">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Job</a></li>
+            <li><a href="#">In Press</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h5>Faq</h5>
+          <ul class="link-color">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="3">Payment</a></li>
+            <li><a href="#">Delivery</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h5>Contact Me</h5>
+          <ul class="link-color">
+            <li><i class="fa-brands fa-telegram"></i>4500 musrhvol plaza, suit 300,<br> fort worth, 29386988</li>
+            <li><i class="fa-solid fa-phone"></i>+1(979)871268</li>
+            <li><i class="fa-regular fa-envelope"></i>info@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="text-light" />
+      <div class="copyright">
+        <span class="text-light ">Copyright 2022 by AttdogMilo.com </span>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>
